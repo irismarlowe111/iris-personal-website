@@ -1,37 +1,41 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人主页</title>
+    <title>Iris Marlowe | Designer & Entrepreneur</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- 导航栏 -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#" class="nav-logo">我的主页</a>
+            <a href="#" class="nav-logo">IM</a>
             <ul class="nav-menu">
-                <li><a href="#home">首页</a></li>
-                <li><a href="#about">关于</a></li>
-                <li><a href="#skills">技能</a></li>
-                <li><a href="#projects">项目</a></li>
-                <li><a href="#contact">联系方式</a></li>
+                <li><a href="#home" data-en="Home" data-zh="首页">Home</a></li>
+                <li><a href="#about" data-en="About" data-zh="关于">About</a></li>
+                <li><a href="#skills" data-en="Skills" data-zh="技能">Skills</a></li>
+                <li><a href="#projects" data-en="Projects" data-zh="项目">Projects</a></li>
+                <li><a href="#contact" data-en="Contact" data-zh="联系">Contact</a></li>
             </ul>
+            <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+                <span class="lang-icon en">EN</span>
+                <span class="lang-icon zh">中</span>
+            </button>
         </div>
     </nav>
 
     <!-- 首页 Hero 区域 -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">你好，我是 <span class="highlight">你的名字</span></h1>
-            <p class="hero-subtitle">这里是你的职业头衔或简短介绍</p>
-            <p class="hero-description">
-                欢迎访问我的个人主页！在这里你可以了解我的背景、技能和项目作品。
+            <h1 class="hero-title">I'm <span class="highlight">Iris Marlowe</span></h1>
+            <p class="hero-subtitle" data-en="Designer & Foreign Trade Entrepreneur" data-zh="设计师 & 外贸创业者">Designer & Foreign Trade Entrepreneur</p>
+            <p class="hero-description" data-en="Welcome to my personal website. Here you can discover my background, skills, and creative projects." data-zh="欢迎访问我的个人网站。在这里你可以了解我的背景、技能和创意作品。">
+                Welcome to my personal website. Here you can discover my background, skills, and creative projects.
             </p>
             <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">查看项目</a>
-                <a href="#contact" class="btn btn-secondary">联系我</a>
+                <a href="#projects" class="btn btn-primary" data-en="View My Work" data-zh="查看作品">View My Work</a>
+                <a href="#contact" class="btn btn-secondary" data-en="Get in Touch" data-zh="联系我">Get in Touch</a>
             </div>
         </div>
     </section>
@@ -39,12 +43,18 @@
     <!-- 关于我 -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">关于我</h2>
+            <h2 class="section-title" data-en="About Me" data-zh="关于我">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>这里是你的个人简介。介绍一下你的教育背景、工作经历、兴趣爱好等。</p>
-                    <p>你可以用一段文字描述自己的专业领域、技术栈、以及你热衷于解决的问题。</p>
-                    <p>让访问者更好地了解你的背景和价值观。</p>
+                    <p data-en="With a master's degree and a strong foundation in architecture design and fine arts, I bring a unique perspective to both creative and business endeavors." data-zh="拥有研究生学历，在建筑设计和美术方面有坚实基础，我为创意和商业工作带来独特的视角。">
+                        With a master's degree and a strong foundation in architecture design and fine arts, I bring a unique perspective to both creative and business endeavors.
+                    </p>
+                    <p data-en="Currently operating as a Foreign Trade SOHO, I combine my design expertise with entrepreneurial spirit to build meaningful connections in the global market." data-zh="目前作为外贸 SOHO 创业者，我将设计专业知识和创业精神结合，在全球市场建立有意义的连接。">
+                        Currently operating as a Foreign Trade SOHO, I combine my design expertise with entrepreneurial spirit to build meaningful connections in the global market.
+                    </p>
+                    <p data-en="My passion lies at the intersection of aesthetics and commerce—creating beautiful experiences that also drive real business results." data-zh="我的热情在于美学与商业的交汇点——创造既美观又能推动实际业务成果的体验。">
+                        My passion lies at the intersection of aesthetics and commerce—creating beautiful experiences that also drive real business results.
+                    </p>
                 </div>
             </div>
         </div>
@@ -53,31 +63,35 @@
     <!-- 技能 -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">技能</h2>
+            <h2 class="section-title" data-en="Skills" data-zh="技能">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>前端开发</h3>
-                    <p>HTML/CSS, JavaScript, React, Vue, Angular</p>
+                    <div class="skill-icon">🏛️</div>
+                    <h3 data-en="Architecture & Design" data-zh="建筑与设计">Architecture & Design</h3>
+                    <p data-en="Architectural design, graphic design, visual composition, brand identity" data-zh="建筑设计、平面设计、视觉构成、品牌识别">
+                        Architectural design, graphic design, visual composition, brand identity
+                    </p>
                 </div>
                 <div class="skill-card">
-                    <h3>后端开发</h3>
-                    <p>Node.js, Python, Java, Go, PHP</p>
+                    <div class="skill-icon">🎨</div>
+                    <h3 data-en="Fine Arts & Aesthetics" data-zh="美术与审美">Fine Arts & Aesthetics</h3>
+                    <p data-en="Color theory, composition, artistic direction, creative concept development" data-zh="色彩理论、构图、艺术指导、创意概念开发">
+                        Color theory, composition, artistic direction, creative concept development
+                    </p>
                 </div>
                 <div class="skill-card">
-                    <h3>数据库</h3>
-                    <p>MySQL, PostgreSQL, MongoDB, Redis</p>
+                    <div class="skill-icon">📱</div>
+                    <h3 data-en="Social Media" data-zh="自媒体运营">Social Media</h3>
+                    <p data-en="Content creation, social media strategy, audience engagement, storytelling" data-zh="内容创作、社交媒体策略、受众参与、叙事">
+                        Content creation, social media strategy, audience engagement, storytelling
+                    </p>
                 </div>
                 <div class="skill-card">
-                    <h3>DevOps</h3>
-                    <p>Docker, Kubernetes, AWS, CI/CD</p>
-                </div>
-                <div class="skill-card">
-                    <h3>其他技能</h3>
-                    <p>Git, Linux, 项目管理，团队协作</p>
-                </div>
-                <div class="skill-card">
-                    <h3>软技能</h3>
-                    <p>沟通能力，问题解决，领导力</p>
+                    <div class="skill-icon">🌍</div>
+                    <h3 data-en="Foreign Trade" data-zh="外贸业务">Foreign Trade</h3>
+                    <p data-en="International business, client relations, negotiation, supply chain management" data-zh="国际贸易、客户关系、谈判、供应链管理">
+                        International business, client relations, negotiation, supply chain management
+                    </p>
                 </div>
             </div>
         </div>
@@ -86,24 +100,25 @@
     <!-- 项目作品 -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">项目作品</h2>
+            <h2 class="section-title" data-en="Selected Projects" data-zh="精选项目">Selected Projects</h2>
             <div class="projects-grid">
                 <!-- 项目 1 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder">项目预览</div>
+                        <div class="placeholder">Project Preview</div>
                     </div>
                     <div class="project-content">
-                        <h3>项目名称 1</h3>
-                        <p>这里是项目的简短描述。说明项目的功能、使用的技术栈以及你在这个项目中的贡献。</p>
+                        <h3 data-en="Foreign Trade Business Development" data-zh="外贸业务拓展">Foreign Trade Business Development</h3>
+                        <p data-en="Building sustainable international business relationships and managing product sourcing from concept to delivery." data-zh="建立可持续的国际业务关系，管理从概念到交付的产品采购。">
+                            Building sustainable international business relationships and managing product sourcing from concept to delivery.
+                        </p>
                         <div class="project-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">MongoDB</span>
+                            <span class="tag" data-en="Business Development" data-zh="业务拓展">Business Development</span>
+                            <span class="tag" data-en="Client Relations" data-zh="客户关系">Client Relations</span>
+                            <span class="tag" data-en="Supply Chain" data-zh="供应链">Supply Chain</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="link-btn">查看代码</a>
-                            <a href="#" class="link-btn">在线演示</a>
+                            <a href="#" class="link-btn" data-en="Details" data-zh="查看详情">Details</a>
                         </div>
                     </div>
                 </div>
@@ -111,19 +126,20 @@
                 <!-- 项目 2 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder">项目预览</div>
+                        <div class="placeholder">Project Preview</div>
                     </div>
                     <div class="project-content">
-                        <h3>项目名称 2</h3>
-                        <p>这里是项目的简短描述。说明项目的功能、使用的技术栈以及你在这个项目中的贡献。</p>
+                        <h3 data-en="Design Consulting" data-zh="设计咨询">Design Consulting</h3>
+                        <p data-en="Providing architectural and graphic design expertise for clients seeking premium aesthetic solutions." data-zh="为客户提供建筑和平面设计专业知识，打造高品质美学方案。">
+                            Providing architectural and graphic design expertise for clients seeking premium aesthetic solutions.
+                        </p>
                         <div class="project-tags">
-                            <span class="tag">Vue</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">Django</span>
+                            <span class="tag" data-en="Architecture" data-zh="建筑设计">Architecture</span>
+                            <span class="tag" data-en="Brand Design" data-zh="品牌设计">Brand Design</span>
+                            <span class="tag" data-en="Visual Identity" data-zh="视觉识别">Visual Identity</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="link-btn">查看代码</a>
-                            <a href="#" class="link-btn">在线演示</a>
+                            <a href="#" class="link-btn" data-en="Details" data-zh="查看详情">Details</a>
                         </div>
                     </div>
                 </div>
@@ -131,19 +147,20 @@
                 <!-- 项目 3 -->
                 <div class="project-card">
                     <div class="project-image">
-                        <div class="placeholder">项目预览</div>
+                        <div class="placeholder">Project Preview</div>
                     </div>
                     <div class="project-content">
-                        <h3>项目名称 3</h3>
-                        <p>这里是项目的简短描述。说明项目的功能、使用的技术栈以及你在这个项目中的贡献。</p>
+                        <h3 data-en="Social Media Branding" data-zh="自媒体品牌">Social Media Branding</h3>
+                        <p data-en="Creating engaging content and developing strategic approaches to build authentic online presence." data-zh="创作引人入胜的内容，制定策略性方法，打造真实的线上存在感。">
+                            Creating engaging content and developing strategic approaches to build authentic online presence.
+                        </p>
                         <div class="project-tags">
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">Next.js</span>
-                            <span class="tag">PostgreSQL</span>
+                            <span class="tag" data-en="Content Strategy" data-zh="内容策略">Content Strategy</span>
+                            <span class="tag" data-en="Storytelling" data-zh="叙事">Storytelling</span>
+                            <span class="tag" data-en="Engagement" data-zh="互动">Engagement</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" class="link-btn">查看代码</a>
-                            <a href="#" class="link-btn">在线演示</a>
+                            <a href="#" class="link-btn" data-en="Details" data-zh="查看详情">Details</a>
                         </div>
                     </div>
                 </div>
@@ -154,25 +171,20 @@
     <!-- 联系方式 -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">联系方式</h2>
+            <h2 class="section-title" data-en="Get in Touch" data-zh="联系我">Get in Touch</h2>
             <div class="contact-content">
-                <p class="contact-intro">欢迎通过以下方式与我联系：</p>
+                <p class="contact-intro" data-en="I'd love to hear from you. Feel free to reach out for collaborations or just say hello!" data-zh="期待你的来信。欢迎联系合作或 просто打个招呼！">
+                    I'd love to hear from you. Feel free to reach out for collaborations or just say hello!
+                </p>
                 <div class="contact-links">
-                    <a href="mailto:your.email@example.com" class="contact-item">
-                        <span class="icon">📧</span>
-                        <span>your.email@example.com</span>
+                    <a href="mailto:Irismarlowe111@gmail.com" class="contact-item">
+                        <span class="icon">✉️</span>
+                        <span>Email</span>
+                        <span class="email">Irismarlowe111@gmail.com</span>
                     </a>
-                    <a href="https://github.com/yourusername" class="contact-item" target="_blank">
-                        <span class="icon">🐙</span>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="https://linkedin.com/in/yourusername" class="contact-item" target="_blank">
+                    <a href="https://www.linkedin.com/in/iris-marlowe-17b877419" class="contact-item" target="_blank">
                         <span class="icon">💼</span>
                         <span>LinkedIn</span>
-                    </a>
-                    <a href="https://twitter.com/yourusername" class="contact-item" target="_blank">
-                        <span class="icon">🐦</span>
-                        <span>Twitter</span>
                     </a>
                 </div>
             </div>
@@ -181,7 +193,7 @@
 
     <!-- 页脚 -->
     <footer class="footer">
-        <p>&copy; 2024 你的名字。All rights reserved.</p>
+        <p>&copy; 2026 Iris Marlowe. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
